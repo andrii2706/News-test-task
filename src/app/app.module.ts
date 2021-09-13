@@ -10,6 +10,8 @@ import { NewsComponent } from './components/news/news.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import {routes} from "./routes/basic.routes";
 import {HttpClientModule} from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import {HttpClientModule} from "@angular/common/http";
     LoginComponent,
     NewsComponent,
     ProfileComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

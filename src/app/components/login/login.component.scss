@@ -1,0 +1,35 @@
+.forms-logination{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px;
+}
+.login{
+  background: silver;
+  padding: 50px;
+  border-radius: 15px;
+}
+.btn-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  button{
+    padding: 10px;
+  }
+}
+.registration{
+  background: silver;
+  padding: 50px;
+  border-radius: 15px;
+}
+.btn-regist{
+  margin: 25px;
+  input{
+    margin-right: 10px;
+  }
+  button{
+    padding: 10px;
+    margin-left: 2px;
+  }
+}
