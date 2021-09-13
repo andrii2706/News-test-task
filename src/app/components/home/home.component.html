@@ -1,0 +1,13 @@
+<div>
+<!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est, porro! Aspernatur cum dignissimos-->
+<!--    laudantium maxime nihil nulla sunt, voluptatum! Aliquid consequatur culpa deleniti dolor illo, odit quasi qui-->
+<!--    voluptate.</p>-->
+</div>
+<div class="card">
+  <div class="title-popular"><h1>Popular news</h1></div>
+  <div *ngFor="let popularInfo of popularNews" class="news-posts">
+  <h2>{{popularInfo.title}}</h2>
+    <img src="{{popularInfo.urlToImage}}" alt="Post">
+    <p>{{popularInfo.description}}</p>
+  </div>
+</div>
