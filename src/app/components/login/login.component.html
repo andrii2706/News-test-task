@@ -1,10 +1,10 @@
 <div class="forms-logination">
   <div class="login">
-    <form>
+    <form [formGroup]="loginForm" (onSubmit)="$event">
       <h3>Login</h3>
       <input type="text">
       <h3>Password</h3>
-      <input type="text">
+      <input type="password">
       <div class="btn-login">
         <button>Login</button>
         <button>Forgot Password</button>

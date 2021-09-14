@@ -14,3 +14,4 @@ export interface IPopularityFull {
   totalResults: number,
   articles: IPopularity[]
 }
+export interface IUSer
