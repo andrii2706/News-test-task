@@ -14,4 +14,10 @@ export interface IPopularityFull {
   totalResults: number,
   articles: IPopularity[]
 }
-export interface IUSer
+export interface IUser{
+  id:number,
+  name: string,
+  password: string,
+  age:number,
+  email:string,
+}
