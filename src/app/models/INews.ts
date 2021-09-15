@@ -17,5 +17,6 @@ export interface INewsFull{
   articles: INews[]
 }
 export interface InPut{
-  info: string
+  Newpage: number,
+
 }

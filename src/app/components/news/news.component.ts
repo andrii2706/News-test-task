@@ -21,15 +21,19 @@ export class NewsComponent implements OnInit {
     this.getNews(1,'apple')
   }
   getNews(NewPage:number,querry:string):void {
+    // @ts-ignore
     this.newsService.getPagintion(NewPage, querry).subscribe(value => this.news = value.articles)
+    console.log(querry);
   }
   paginationTo(NewPage:number){
     this.page = NewPage
     this.getNews(NewPage,'apple')
   }
-  foundWords(querry:string, Newpage:number){
-  this.querry = querry
-    this.getNews(Newpage,querry)
+  foundWords(e:any){
+    e.preventDefault()
+    this.getNews(1,this.querry)
   }
-
+  setQuery(querry:any){
+    this.querry = querry.target.value
+  }
 }
