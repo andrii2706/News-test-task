@@ -1,10 +1,10 @@
 <div class="forms-logination">
   <div class="login">
-    <form [formGroup]="loginForm" (onSubmit)="$event">
+    <form [formGroup]="loginForm" (submit)="onSubmit()" >
       <h3>Login</h3>
-      <input type="text">
+      <input type="text" formControlName="login">
       <h3>Password</h3>
-      <input type="password">
+      <input type="password" formControlName="password">
       <div class="btn-login">
         <button>Login</button>
         <button>Forgot Password</button>
@@ -12,17 +12,17 @@
     </form>
   </div>
   <div class="registration">
-    <form>
+    <form [formGroup]="registrationForm" (submit)="onRegistration()">
       <h3>Name</h3>
-      <input type="text">
-      <h3>Login</h3>
-      <input type="text">
+      <input type="text" formControlName="name">
+      <h3>Nickname</h3>
+      <input type="text" formControlName="nickName">
       <h3>Age</h3>
-      <input type="text">
+      <input type="text" formControlName="age">
       <h3>Email</h3>
-      <input type="text">
+      <input type="text" formControlName="email">
       <h3>Password</h3>
-      <input type="text">
+      <input type="text" formControlName="password">
       <div class="btn-regist">
         <input type="checkbox" >
         <button>Registrate</button>

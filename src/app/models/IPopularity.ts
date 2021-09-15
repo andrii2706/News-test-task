@@ -21,3 +21,4 @@ export interface IUser{
   age:number,
   email:string,
 }
+

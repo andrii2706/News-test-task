@@ -11,8 +11,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 import {routes} from "./routes/basic.routes";
 import {HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { InfoComponent } from './components/news/info/info.component';
+import {MatInputModule} from "@angular/material/input";
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -22,14 +24,16 @@ import {ReactiveFormsModule} from "@angular/forms";
     LoginComponent,
     NewsComponent,
     ProfileComponent,
-    SearchBarComponent,
+    InfoComponent,
   ],
     imports: [
         BrowserModule,
         RouterModule.forRoot(routes),
         HttpClientModule,
         BrowserAnimationsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatInputModule,
+        NgxPaginationModule
     ],
   providers: [],
   bootstrap: [AppComponent]
