@@ -10,7 +10,7 @@
     <div class="news-list">
     <app-info *ngFor="let info of news| paginate: { itemsPerPage: 20, currentPage: page, totalItems:72853 }"[info]="info"></app-info>
     </div>
-    <div class="padding">
+    <div class="padding pagination">
       <pagination-controls (pageChange)="paginationTo($event)"></pagination-controls>
     </div>
   </div>
