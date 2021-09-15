@@ -1,0 +1,37 @@
+.news-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.form{
+  display: flex;
+  justify-content: center;
+
+  input{
+    background: beige;
+    border: 1px solid beige;
+    border-radius: 15px;
+    margin: 10px;
+    width: 250px;
+    height: 25px;
+  }
+  button{
+    color: white;
+    background: #22254b;
+    border-radius: 15px;
+    &:hover{
+      background: #040428;
+      color: tomato;
+      font-size: 15px;
+    }
+  }
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin: 25px;
+}

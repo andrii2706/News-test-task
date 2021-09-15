@@ -1,13 +1,13 @@
 <div>
-  <div>
+  <div class="form">
     <form>
       <input type="text" (input)="setQuery($event)">
-      <button (click)="foundWords($event)">dkldjf</button>
+      <button (click)="foundWords($event)"><i class="fas fa-search"></i></button>
     </form>
   </div>
   <div>
-    <h2>News</h2>
-    <div >
+    <h2 class="title">News</h2>
+    <div class="news-list">
     <app-info *ngFor="let info of news| paginate: { itemsPerPage: 20, currentPage: page, totalItems:72853 }"[info]="info"></app-info>
     </div>
     <div class="padding">

@@ -23,7 +23,7 @@ export class NewsComponent implements OnInit {
   getNews(NewPage:number,querry:string):void {
     // @ts-ignore
     this.newsService.getPagintion(NewPage, querry).subscribe(value => this.news = value.articles)
-    console.log(querry);
+    // console.log(querry);
   }
   paginationTo(NewPage:number){
     this.page = NewPage

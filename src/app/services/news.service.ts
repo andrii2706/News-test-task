@@ -16,7 +16,7 @@ url ='https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=d71a2ff
     private httpClient:HttpClient
   ) { }
   getPagintion(NewPage:number,querry:string):Observable<INewsFull> | undefined{
- console.log(NewPage, querry);
+ // console.log(NewPage, querry);
    if(NewPage && querry){
    return this.httpClient.get<INewsFull>(this.basicUrl + `?q=${querry} &page=${NewPage}` + this.key )
  } else if(NewPage && !querry){
