@@ -15,6 +15,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { InfoComponent } from './components/news/info/info.component';
 import {MatInputModule} from "@angular/material/input";
 import {NgxPaginationModule} from "ngx-pagination";
+import { RegisterComponent } from './components/login/register/register.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {NgxPaginationModule} from "ngx-pagination";
     NewsComponent,
     ProfileComponent,
     InfoComponent,
+    RegisterComponent,
   ],
     imports: [
         BrowserModule,
@@ -33,7 +36,8 @@ import {NgxPaginationModule} from "ngx-pagination";
         BrowserAnimationsModule,
         ReactiveFormsModule,
         MatInputModule,
-        NgxPaginationModule
+        NgxPaginationModule,
+        NgbModule
     ],
   providers: [],
   bootstrap: [AppComponent]

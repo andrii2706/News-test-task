@@ -1,7 +1,7 @@
-export interface INews{
-  source:{
-    id:string,
-    name:string
+export interface INews {
+  source: {
+    id: string,
+    name: string
   }
   author: string,
   title: string,
@@ -11,12 +11,14 @@ export interface INews{
   publishedAt: string
   content: string
 }
-export interface INewsFull{
+
+export interface INewsFull {
   status: string,
   totalResults: number,
   articles: INews[]
 }
-export interface InPut{
+
+export interface InPut {
   Newpage: number,
 
 }

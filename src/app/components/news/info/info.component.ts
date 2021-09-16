@@ -9,8 +9,10 @@ import {INews} from "../../../models/INews";
 export class InfoComponent implements OnInit {
 
   @Input()
-  info:INews
-  constructor() { }
+  info: INews
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

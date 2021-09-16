@@ -1,7 +1,7 @@
-export interface IPopularity{
-  source:{
-    id:string,
-    name:string
+export interface IPopularity {
+  source: {
+    id: string,
+    name: string
   },
   author: string,
   title: string,
@@ -9,16 +9,17 @@ export interface IPopularity{
   url: string,
   urlToImage: string
 }
+
 export interface IPopularityFull {
   status: string,
   totalResults: number,
   articles: IPopularity[]
 }
-export interface IUser{
-  id:number,
+
+export interface IUser {
+  id: number,
   name: string,
   password: string,
-  age:number,
-  email:string,
+  email: string,
 }
 

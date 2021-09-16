@@ -1,8 +1,5 @@
-<div>
+<div *ngFor="let information of info" class="user-card-info">
   <i class="fas fa-user"></i>
-  <h3>User Name --- age</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloremque odio quas, sint unde veniam? Distinctio
-    esse facilis incidunt, molestiae omnis quasi quod sequi voluptas voluptatem. Accusantium at quisquam tempore?</p>
-  <button>Edit User Info</button>
+  <h3>{{information.name}}</h3>
+  <p>User Profile</p>
 </div>
-<!--Todo створити юзера який буде через логінацію  автоматично загружати сюди інформацію-->

@@ -1,13 +1,15 @@
-.navigation{
+.navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 25px;
-  a{
+
+  a {
     text-decoration: none;
     color: black;
-    &:hover{
-      font-weight:700;
+
+    &:hover {
+      font-weight: 700;
       -webkit-transition: .2s ease-out;
       -webkit-transition-delay: 0.5s;
       -o-transition: .2s ease-out;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {IPopularity} from "../../models/IPopularity";
 import {PopularNewsService} from "../../services/popular-news.service";
 
@@ -10,12 +10,14 @@ import {PopularNewsService} from "../../services/popular-news.service";
 export class HomeComponent implements OnInit {
 
   popularNews: IPopularity[]
+
   constructor(
-    private service:PopularNewsService
-  ) { }
+    private service: PopularNewsService
+  ) {
+  }
 
   ngOnInit(): void {
-    this.service.getAll().subscribe(value => this.popularNews = value.articles )
+    this.service.getAll().subscribe(value => this.popularNews = value.articles)
   }
 
 }
